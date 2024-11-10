@@ -1,0 +1,730 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Estilos de encabezado */
+header {
+    position: relative;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    max-width: 100px;
+    margin-left: 3rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 0.5rem;
+}
+
+nav ul li a{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    text-decoration: underline #ff8b00 3px ;
+    margin-bottom: 5px;
+}
+
+.nav-item:active {
+    text-decoration: underline #ff6600 3px;
+}
+
+.desktop-header .buttons{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    
+}
+
+.reservation-button, 
+.ordering-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff8b00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 1rem;
+    max-width: 75px;
+    max-height: 50px;
+    transition: background-color 0.3s ease;
+}   
+
+.ordering-button {
+    margin-right: 3rem;
+}
+
+.reservation-button:hover,
+.ordering-botton:hover {
+    background-color: #cc5500;
+}
+
+/* Los estilos de encabezado terminan aquí */
+
+/* Aquí está el estilo para el diseño adaptable. */
+
+.nav-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.nav-item {
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+  
+.nav-item:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+.nav-item.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.mobile-logo {
+    display: none;
+}
+  
+/* Estilos para el botón de alternancia del menú */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+  
+.menu-icon {
+    font-size: 1.5em;
+}
+
+
+/* La sección de Inicio Estilo Comienza aquí */
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Esta propiedad es para asegurar el contexto de apilamiento. */
+    margin-bottom: 0.5rem;
+}
+
+    /* Estilo para el fondo del héroe */
+.video-background {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /*Esta propiedad es para enviar el video detrás del texto. */
+    opacity: 50%;
+}
+
+    /* Estilo para el contacto en casa */
+.home-content {
+    position: relative;
+    z-index: 1; /* Esto es para asegurarse de que el contenido aparezca encima del video. */
+    color: #333;
+    padding: 0 1rem;
+}
+
+#restaurant-name {
+    font-weight: bolder;
+    color: #ff8b00;
+}
+
+.home-content h1,
+.home-content p {
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-hero-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff8b00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-hero-button:hover {
+    background-color: #cc5500;
+}
+
+/* La sección de estilo del hogar termina aquí */
+
+/* Este estilo es para el botón de volver al principio. */
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff8b00;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999; /*Esto es para que aparezca por encima de otros elementos.  */
+}
+
+#back-to-top-btn:hover {
+    background-color: #cc5500;
+}
+
+/* El estilo de la sección del menú comienza aquí */
+
+.menu-section {
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+    overflow: hidden; /*Esto para garantizar que los elementos del menú se deslicen hacia la vista. */
+    transition: 1s ease-in-out;
+}
+
+.menu-category h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.menu-items-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.menu-items {
+    display: inline-block;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    box-shadow: #ff8b00;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 0.5rem;
+}
+
+
+.menu-item img {
+    width: 100%;
+    max-width: 200px ;
+    border-radius: 5px;
+    display: block;
+}
+
+
+.menu-item .price {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff8b00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu-item h3 {
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+    color: #ff8b00;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-wrap: wrap;
+}
+
+.menu-item .increase, .decrease {
+    background-color: #ff8b00;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item .order-button{
+    align-items: end;
+    background-color: #ff8b00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item .increase:hover .decrease:hover .order-button:hover {
+    background-color: #ff6600;
+}
+
+.menu-nav {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.menu-nav button {
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #777;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    
+}
+
+.menu-nav button:hover {
+    background-color: #ff8b00;
+    color: #fff;
+    border-color: #ff8b00;
+}
+
+/* Aquí está el estilo del botón de visualización. */
+.btn-container {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#see-more-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff8b00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 1rem;
+    max-width: 75px;
+    max-height: 50px;
+    transition: background-color 0.3s ease;
+}   
+
+#see-more-btn {
+    margin-right: 3rem;
+}
+
+#see-more-btn {
+    background-color: #cc5500;
+}
+
+.hidden {
+    display: none;
+}
+
+/* La sección de estilo del menú termina aquí */
+
+/* La sección de pedidos Estilo Comienza aquí */
+
+.ordering-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.ordering-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ordering-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ordering-container p {
+    margin-bottom: 2rem;
+}
+
+/* el estilo para el formulario */
+#ordering-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    text-align: left;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-group label{
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ff8b00;
+    border-radius: 5px;
+}
+.full-width {
+    grid-column: 1 / -1;
+}
+
+button[type="submit"] {
+    background-color: #ff8b00; 
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc5500; 
+}
+
+/* La sección de pedidos Estilo termina aquí */
+
+/* La sección de reservas Estilo Comienza aquí */
+.reservation-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.reservation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reservation-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.reservation-container p {
+    margin-bottom: 1rem;
+}
+
+    /* El estilo del formulario */
+#reservation-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*Esto para el diseño de dos columnas. */
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    height: 2rem;
+    padding: 0.5;
+    border: 1px solid #ff8b00;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;  /*Esto para el diseño de dos columnas. */
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+button[type="submit"]{
+    background-color: #ff8b00;
+    color: #fff ;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+button[type="submit"]:hover{
+    background-color: #cc5500;
+}
+
+
+/* La sección de reserva Estilo Fin aquí */
+
+/* El estilo de la sección de Contacto comienza aquí */
+#contact {
+    padding: 2em 0;
+    background-color: #f8f8f8;
+}
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+  
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+  
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin-left: 5em;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 1em;
+    margin-right: 4rem;
+}
+  
+.contact-info h3,
+.contact-form h3 {
+    margin-bottom: 0.5em;
+}
+  
+.contact-form .form-group {
+    margin-bottom: 1em;
+}
+  
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ff8b00;
+    border-radius: 4px;
+}
+  
+.contact-form button {
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff8b00;
+    color: white;
+    cursor: pointer;
+}
+  
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+  
+.map-container {
+    text-align: center;
+    margin-bottom: 2em;
+}
+  
+.social-media {
+    text-align: center;
+}
+  
+.social-media a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #333;
+}
+  
+.social-media a:hover {
+    text-decoration: underline;
+}
+  
+
+/* La sección de Contacto Estilo Finaliza aquí */
+
+/* Los estilos de pie de página aquí */
+
+footer {
+    background-color: #ff8b00;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer img {
+    max-width: 100px;
+}
+
+footer p {
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.social-media {
+    background-color: #ff8b00;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Consultas de medios para diseño responsivo */
+@media only screen and (max-width: 768px) {
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-section p {
+        font-size: 1.2rem;
+    }
+
+    .home-hero-button {
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #333;
+    }
+
+    .nav-menu li a {
+        color: #fff;
+    }
+    
+    .nav-menu.show {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-logo {
+        display: flex;
+        height: 100px;
+        width: 100px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-info,
+    .contact-form {
+        max-width: 90%;
+        margin-left: 2rem;
+    }
+
+    
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-section h1 {
+        font-size: 2rem;
+    }
+
+    .home-section p {
+        font-size: 1rem;
+    }
+
+    .home-hero-button {
+        font-size: 0.8rem;
+    }
+
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+    font-size: 0.9em;
+    }
+
+    .contact-form button {
+    width: 100%;
+    padding: 0.5em;
+    }
+
+   .social-media a {
+    display: block;
+    margin: 0.5em 0;
+   }
+}

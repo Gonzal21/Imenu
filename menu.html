@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home">
+        <div class="desktop-header">
+            <div class="logo">
+                <img src="Assets/imgs/logo/logo Dark bg.jpg" alt="Restaurant logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-item">hogar</a></li>
+                    <li><a href="menu.html" class="nav-item">Menú</a></li>
+                    <li><a href="ordeneAhora.html" class="nav-item">¡Pide en Línea!</a></li>
+                    <li><a href="reserva.html" class="nav-item">Reservación</a></li>
+                    <li><a href="contacto.html" class="nav-item">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="reserva.html" class="reservation-button">Reservación</a>
+                <a href="ordeneAhora.html" class="ordering-button">¡Pide Ahora!</a>
+            </div>
+        </div>
+        
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <img src="Assets/imgs/logo/logo Dark bg.jpg" alt="Restaurant logo">
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="menu-icon">&#9776;</span>
+            </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-item">hogar</a></li>
+                    <li><a href="menu.html" class="nav-item">Menú</a></li>
+                    <li><a href="ordeneAhora.html" class="nav-item">¡Pide en Línea!</a></li>
+                    <li><a href="reserva.html" class="nav-item">Reservación</a></li>
+                    <li><a href="contacto.html" class="nav-item">Contacto</a></li>
+                </ul>
+            
+        </div>
+    </header>
+    
+
+    <!-- La sección del menú -->
+    <section class="menu-section" id="menu">
+        <div class="menu-container">
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <h2>Pizza</h2>
+                    <div class="menu-items-container"> 
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pizza/Margherita Pizza.jpg" alt="Margherita Pizza">
+                                <div class="price">€8.99</div>
+                            </div>
+                            <h3>Pizza margarita</h3>
+                            <p>Pizza italiana clásica con salsa de tomate, queso mozzarella y albahaca fresca.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pizza/Pepperoni Pizza.jpg" alt="Pepperoni Pizza">
+                                <div class="price">€9.99</div>
+                            </div>
+                            <h3>Pepperoni Pizza</h3>
+                            <p>Traditional pizza topped with spicy pepperoni slices and melted cheese.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pizza/Pizza Diavola.jpg" alt="Pizza Diavola">
+                                <div class="price">€12.99</div>
+                            </div>
+                            <h3>Pizza Diavola</h3>
+                            <p>Pizza picante cubierta con salsa de tomate, queso mozzarella, salami picante y chiles.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pizza/Quattro Formaggi Pizza.jpg" alt="Quattro Formaggi Pizza">
+                                <div class="price">€11.99</div>
+                            </div>
+                            <h3>Quattro Formaggi Pizza</h3>
+                            <p>Una deliciosa mezcla de cuatro quesos: mozzarella, gorgonzola, fontina y parmesano.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pizza/Vegetarian Pizza.jpg" alt="Vegetarian Pizza">
+                                <div class="price">€10.99</div>
+                            </div>
+                            <h3>Pizza vegetariana</h3>
+                            <p>Verduras frescas del huerto, como pimientos morrones, champiñones, cebollas y aceitunas sobre una base de salsa de tomate.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                    </div> 
+                    </div>
+
+                    <div class="menu-nav">
+                        <button class="nav-button prev">&#8249;</button>
+                        <button class="nav-button next">&#8250;</button>
+                    </div>
+                    
+                </div>
+                
+                <div class="menu-category">
+                    <h2>Platos de pasta</h2>
+                    <div class="menu-items-container">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pasta/Spaghetti Carbonara.jpg" alt="Spaghetti Carbonara">
+                                <div class="price">€12.99</div>
+                            </div>
+                            <h3>Espaguetis a la carbonara</h3>
+                            <p>Plato clásico de pasta con salsa cremosa, panceta, queso parmesano y pimienta negra molida.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pasta/Lasagna Bolognese.jpg" alt="Lasagna Bolognese">
+                                <div class="price">€14.99</div>
+                            </div>
+                            <h3>Lasaña a la boloñesa</h3>
+                            <p>Classic pasta dish with creamy sauce, pancetta, Parmesan cheese, and cracked black pepper.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pasta/Tagliatelle Frutti di Mare.jpg" alt="Tagliatelle Frutti di Mare">
+                                <div class="price">€15.99</div>
+                            </div>
+                            <h3>Tallarines Frutti di Mare</h3>
+                            <p>Pasta fresca de tagliatelle con una mezcla de mariscos que incluye mejillones, camarones y calamares en salsa de vino blanco y ajo.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pasta/Penne Arrabiata.jpg" alt="Penne Arrabiata">
+                                <div class="price">€11.99</div>
+                            </div>
+                            <h3>Penne Arrabiata</h3>
+                            <p>Pasta penne en salsa de tomate picante con ajo, chiles y perejil fresco.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Pasta/Ravioli al Funghi.jpg" alt="Ravioli al Funghi">
+                                <div class="price">€13.99</div>
+                            </div>
+                            <h3>Raviolis al funghi</h3>
+                            <p>Raviolis caseros rellenos de champiñones y servidos con una salsa cremosa de champiñones.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>   
+                    </div>
+                    </div>
+                    <div class="menu-nav">
+                        <button class="nav-button prev">&#8249;</button>
+                        <button class="nav-button next">&#8250;</button>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h2>Seafood </h2>
+                    <div class="menu-items-container">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Seafood/Grilled Salmon.jpg" alt="Grilled Salmon">
+                                <div class="price">€17.99</div>
+                            </div>
+                            <h3>Salmón a la parrilla</h3>
+                            <p>Filete de salmón fresco condimentado con hierbas y asado a la perfección, servido con verduras de temporada.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Seafood/Shrimp Scampi.jpg" alt="Shrimp Scampi">
+                                <div class="price">€16.99</div>
+                            </div>
+                            <h3>Camarones al ajillo</h3>
+                            <p>Jugosos camarones salteados en mantequilla de ajo y salsa de vino blanco, servidos con pasta o arroz.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Seafood/Mussels Marinière.jpg" alt="Mussels Marinière">
+                                <div class="price">€18.99</div>
+                            </div>
+                            <h3>Mejillones a la marinera</h3>
+                            <p>Mejillones frescos cocidos al vapor en un caldo de vino blanco y ajo, servidos con pan crujiente.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="menu-nav">
+                        <button class="nav-button prev">&#8249;</button>
+                        <button class="nav-button next">&#8250;</button>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h2>Platos famosos de Holanda</h2>
+                    <div class="menu-items-container">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Netherlands Famous Dishes/Bitterballen.jpg" alt="Bitterballen">
+                                <div class="price">€6.99</div>
+                            </div>
+                            <h3>Bolas amargas</h3>
+                            <p>Aperitivo holandés a base de carne servido con mostaza para mojar.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Netherlands Famous Dishes/Stamppot.jpg" alt="Stamppot">
+                                <div class="price">€10.99</div>
+                            </div>
+                            <h3>Stamppot</h3>
+                            <p>Plato tradicional holandés elaborado con puré de patatas, verduras y salchicha ahumada.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Netherlands Famous Dishes/Poffertjes.jpg" alt="Poffertjes">
+                                <div class="price">€8.99</div>
+                            </div>
+                            <h3>Poffertjes</h3>
+                            <p>Mini panqueques holandeses servidos con azúcar en polvo y mantequilla.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+    
+                    </div>
+                        <div class="menu-nav">
+                            <button class="nav-button prev">&#8249;</button>
+                            <button class="nav-button next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h2>Postres</h2>
+                    <div class="menu-items-container">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Desserts/Tiramisu.jpg" alt="Tiramisu">
+                                <div class="price">€6.99</div>
+                            </div>
+                            <h3>Tiramisu</h3>
+                            <p>Postre clásico italiano elaborado con capas de bizcochos de soletilla empapados en café y queso mascarpone. </p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Desserts/Dutch Apple Pie.jpg" alt="Dutch Apple Pie">
+                                <div class="price">€5.99</div>
+                            </div>
+                            <h3>Tarta de manzana holandesa</h3>
+                            <p>Traditional Dutch apple pie served with whipped cream or ice cream.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Desserts/Gelato Selection.jpg" alt="Gelato Selection">
+                                <div class="price">€4.99</div>
+                            </div>
+                            <h3>Gelato Selection</h3>
+                            <p>Surtido de sabores de helado italiano, servido en cono o taza.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>    
+                    </div>
+                    </div>
+
+                    <div class="menu-nav">
+                        <button class="nav-button prev">&#8249;</button>
+                        <button class="nav-button next">&#8250;</button>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h2>Vinos y cervezas</h2>
+                    <div class="menu-items-container">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Famous Wines and Beers in the Netherlands/Heineken Lager.jpg" alt="Heineken Lager">
+                                <div class="price">€4.99</div>
+                            </div>
+                            <h3>Heineken Lager</h3>
+                            <p>Cerveza lager holandesa icónica con un sabor fresco y refrescante.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Famous Wines and Beers in the Netherlands/Grolsch Premium Pilsner.jpg" alt="Grolsch Premium Pilsner">
+                                <div class="price">€4.99</div>
+                            </div>
+                            <h3>Grolsch Premium Pilsner</h3>
+                            <p>Cerveza pilsner holandesa con un distintivo sabor a lúpulo.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Famous Wines and Beers in the Netherlands/Amstel Radler.jpg" alt="Amstel Radler">
+                                <div class="price">€5.99</div>
+                            </div>
+                            <h3>Amstel Radler</h3>
+                            <p>Cerveza ligera y afrutada mezclada con refresco de limón, perfecta para los días cálidos de verano.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Famous Wines and Beers in the Netherlands/Netherlands Red Wine.jpg" alt="Netherlands Red Wine">
+                                <div class="price">€25.99+</div>
+                            </div>
+                            <h3>Vino tinto holandés</h3>
+                            <p>Una selección de vinos tintos de viñedos holandeses, con sabores y aromas ricos.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="menu-nav">
+                        <button class="nav-button prev">&#8249;</button>
+                        <button class="nav-button next">&#8250;</button>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h2>Bebidas calientes</h2>
+                    <div class="menu-items-container">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Hot Drinks/Cappuccino.jpg" alt="Cappuccino">
+                                <div class="price">€3.99</div>
+                            </div>
+                            <h3>Capuchino</h3>
+                            <p>Espresso cubierto con leche al vapor espumosa y una pizca de cacao en polvo. </p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Hot Drinks/Espresso.jpg" alt="Espresso">
+                                <div class="price">€2.99</div>
+                            </div>
+                            <h3>Café exprés</h3>
+                            <p>Single shot of intense espresso.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Hot Drinks/Dutch Hot Chocolate.jpg" alt="Dutch Hot Chocolate">
+                                <div class="price">€4.50</div>
+                            </div>
+                            <h3>Chocolate caliente holandés</h3>
+                            <p>Rico chocolate caliente elaborado con cacao holandés y cubierto con crema batida.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="menu-nav">
+                        <button class="nav-button prev">&#8249;</button>
+                        <button class="nav-button next">&#8250;</button>
+                    </div>
+                </div>
+                
+                <div class="menu-category hidden">
+                    <h2>Cold Drinks</h2>
+                    <div class="menu-items-container">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Cold Drinks/freshly Squeezed Orange Juice.jpg" alt="Freshly Squeezed Orange Juice">
+                                <div class="price">€3.99</div>
+                            </div>
+                            <h3>jugo de naranja recién exprimido</h3>
+                            <p>Zumo de naranja refrescante elaborado con naranjas de origen local.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Cold Drinks/Dutch Soda.jpg" alt="Dutch Soda">
+                                <div class="price">€2.99</div>
+                            </div>
+                            <h3>Soda holandesa</h3>
+                            <p>Refresco elaborado localmente en varios sabores, incluidos limón, naranja y cola.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-itme-image">
+                                <img src="Assets/imgs/menu imgs/Cold Drinks/Iced Tea.jpg" alt="Iced Tea">
+                                <div class="price">€2.99</div>
+                            </div>
+                            <h3>Té helado</h3>
+                            <p>Té negro frío infusionado con limón y servido con hielo.</p>
+                            <div class="order-controls">
+                                <button class="decrease">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase">+</button>
+                                <button class="order-button">pedido</button>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+                    <div class="menu-nav">
+                        <button class="nav-button prev">&#8249;</button>
+                        <button class="nav-button next">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+    </section>
+
+    <!-- La sección de pie de página -->
+    <footer>
+        <div class="footer-logo">
+            <img src="Assets/imgs/logo/logo.jpg" alt="footer logo">
+        </div>
+        <!-- Enlaces de redes sociales -->
+        <div>
+            <h3>Síganos</h3>
+            <a class="social-media" href="#" target="_blank">Facebook</a>
+            <a class="social-media" href="#" target="_blank">Twitter</a>
+            <a class="social-media" href="#" target="_blank">Instagram</a>
+          </div>
+        <p>&copy; Restaurante Gonzalo. Todos los derechos reservados</p>
+
+    </footer>
+</body>
+</html>
