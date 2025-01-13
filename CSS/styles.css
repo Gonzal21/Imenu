@@ -344,7 +344,7 @@ nav ul li a{
     align-items: center;
 }
 
-#see-more-btn {
+.see-more-btn {
     padding: 0.5rem 1rem;
     background-color: #ff8b00;
     color: #fff;
@@ -356,11 +356,11 @@ nav ul li a{
     transition: background-color 0.3s ease;
 }   
 
-#see-more-btn {
+.see-more-btn {
     margin-right: 3rem;
 }
 
-#see-more-btn {
+.see-more-btn {
     background-color: #cc5500;
 }
 
